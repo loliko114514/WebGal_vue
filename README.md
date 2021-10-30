@@ -10,3 +10,9 @@ npm install vue-cil
 ```
 来下载vue-cil
 
+运行命令
+```
+npm run serve
+```
+
+如果没有npm命令请检查有没有安装nodejs以及环境变量的配置
