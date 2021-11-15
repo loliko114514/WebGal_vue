@@ -7,8 +7,6 @@
         <FigureImageRight />
         
         <WGbottomBox v-show="!this.$store.state.hideTextStatus" />
-        <div id="bgm"></div>
-        <div id="vocal"></div>
         <div id="panic-overlay"></div>
     </div>
 </template>
@@ -30,7 +28,7 @@ export default {
         FigureImage,
         FigureImageLeft,
         FigureImageRight,
-        ChooseBox
+        ChooseBox,
     },
     computed:{
         

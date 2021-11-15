@@ -36,7 +36,7 @@ export default {
     background-color: rgba(0,0,0,0.5);
     background-image: linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,0) 75%,rgba(255,255,255,0.3)100%);
     /*border-radius: 15px;*/
-    -webkit-animation: showSoftly 0.5s;
+    animation: showSoftly 0.5s;
     padding: 15px 1% 15px 1%;
 }
 .closeSVG{

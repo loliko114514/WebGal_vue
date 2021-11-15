@@ -40,7 +40,7 @@ const state = {
     showLoad:false,//显示读档界面
     showBacklog:false,//显示回溯界面
     showMesModel:false,//显示确认选项
-    showChooseBox:false,
+    showChooseBox:false,//显示选择界面
 
     MesModelInfo:{
         title:'',
@@ -58,6 +58,7 @@ const state = {
     // 初始化backlog存储表
     CurrentBacklog:[],
     backlogRefresh:0,//骗computed更新
+    bgmRefresh:0,//骗bgm更新
     //初始化需要记录到cookie的变量
     currentSavePage: 0,
     currentLoadPage: 0,

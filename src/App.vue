@@ -7,6 +7,8 @@
     <WGSave v-if="this.$store.state.showSave" />
     <WGLoad v-if="this.$store.state.showLoad" />
     <WGsetting v-if="this.$store.state.showsetting"/>
+    <SceneBgm/>
+    <SceneVocal/>
   </div>
 </template>
 
@@ -18,6 +20,8 @@ import WGSave from './components/WGSave.vue'
 import WGLoad from './components/WGLoad.vue'
 import WGBacklog from './components/WGBacklog.vue'
 import MesModel from './components/MesModel.vue'
+import SceneBgm from './components/SceneBgm.vue'
+import SceneVocal from './components/SceneVocal.vue'
 import { modulesMixin } from './utils/mixin'
 export default {
   mixins:[modulesMixin],
@@ -29,7 +33,9 @@ export default {
     WGSave,
     WGLoad,
     WGBacklog,
-    MesModel
+    MesModel,
+    SceneBgm,
+    SceneVocal
   },
   mounted(){
     this.getGameInfo();

@@ -199,9 +199,6 @@ const mutations = {
             return;
         }//如果超过场景文本行数，停止处理语句。
         let thisSentence = state.currentScene[state.currentInfo['SentenceID']];//此条语句的内容
-        console.log("thisSentence",thisSentence)
-        console.log("state.currentInfo['SentenceID']",state.currentInfo['SentenceID'])
-        console.log("state.currentScene",state.currentScene)
         let command = thisSentence[0];//此条语句的控制文本（也可能是省略人物对话的语句）
         let S_content = thisSentence[1];
         if (command === 'changeBG') {
@@ -262,6 +259,8 @@ const mutations = {
             state.currentInfo["bgm"] = thisSentence[1];
             // loadBGM();
             state.currentInfo['SentenceID']+=1;
+            state.bgmRefresh++;
+            console.log(state.currentInfo["bgm"])
             this.commit('nextSentenceProcessor');
             return;
         }
